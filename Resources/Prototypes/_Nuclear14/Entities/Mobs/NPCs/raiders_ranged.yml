@@ -5,11 +5,11 @@
   description: Psychopatic raider who will shoot and rob just about anyone.
   components:
     - type: Gun #Mobs currently cannot bolt a gun, so we have to simulate them firing it
-      minAngle: 5
+      minAngle: 6
       maxAngle: 20
       angleIncrease: 4
       angleDecay: 4
-      fireRate: 1.5
+      fireRate: 2.0
       soundGunshot: /Audio/_Nuclear14/Weapons/Guns/Pistols/N14WeaponPistol10mm/shot1.ogg
       useKey: false
       selectedMode: SemiAuto
@@ -21,7 +21,7 @@
       capacity: 12
       count: 12
     - type: RechargeBasicEntityAmmo
-      rechargeCooldown: 4
+      rechargeCooldown: 3
       rechargeSound:
         path: /Audio/_Nuclear14/Weapons/Effects/Reload/Pistols/pistol_magin.ogg
     - type: Loadout
@@ -87,10 +87,10 @@
   components:
     - type: Gun
       minAngle: 10
-      maxAngle: 34.5
+      maxAngle: 36
       angleIncrease: 8
       angleDecay: 16
-      fireRate: 3.0
+      fireRate: 3.25
       soundGunshot: /Audio/_Nuclear14/Weapons/Guns/Pistols/N14WeaponPistol10mm/shot1.ogg
       useKey: false
       selectedMode: FullAuto
@@ -102,7 +102,7 @@
       capacity: 35
       count: 35
     - type: RechargeBasicEntityAmmo
-      rechargeCooldown: 4
+      rechargeCooldown: 3
       rechargeSound:
         path: /Audio/_Nuclear14/Weapons/Effects/Reload/SMGs/smg_magin.ogg
     - type: Loadout
@@ -167,7 +167,7 @@
   description: Psychopatic raider armed with a bolt action rifle. Dangerous at a distance.
   components:
     - type: Gun
-      minAngle: 5
+      minAngle: 4
       maxAngle: 30
       angleIncrease: 4
       angleDecay: 16
@@ -184,7 +184,7 @@
       capacity: 5
       count: 5
     - type: RechargeBasicEntityAmmo
-      rechargeCooldown: 4
+      rechargeCooldown: 3
       rechargeSound:
         path: /Audio/Weapons/Guns/MagIn/bullet_insert.ogg
     - type: Loadout
@@ -249,10 +249,11 @@
   description: Psychopatic raider armed with a scattergun. Deadly at close range.
   components:
     - type: Gun
-      minAngle: 35
+      minAngle: 40
       maxAngle: 110
       angleIncrease: 8
       angleDecay: 16
+      fireRate: 1.5
       soundGunshot:
         collection: N14DoubleBarrelShotgunGunshot
       useKey: false
@@ -330,11 +331,11 @@
   description: Professional mercenary armed with a carbine. One might be better off avoiding him.
   components:
     - type: Gun
-      minAngle: 20
+      minAngle: 10
       maxAngle: 40
       angleIncrease: 4
       angleDecay: 16
-      fireRate: 2.5
+      fireRate: 2.0
       soundGunshot:
         collection: N14OldCarbineGunshot
       useKey: false
@@ -347,7 +348,7 @@
       capacity: 25
       count: 25
     - type: RechargeBasicEntityAmmo
-      rechargeCooldown: 4
+      rechargeCooldown: 3
       rechargeSound:
         path: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
     - type: Loadout
@@ -412,7 +413,7 @@
   description: Professional mercenary armed with a combat shotgun. This man can finish anyone off in close quarters.
   components:
     - type: Gun
-      minAngle: 34.5
+      minAngle: 35
       maxAngle: 104
       angleIncrease: 8
       angleDecay: 16
@@ -497,7 +498,7 @@
       maxAngle: 13.5
       angleIncrease: 1
       angleDecay: 4
-      fireRate: 3.0
+      fireRate: 4.0
       soundGunshot: /Audio/_Nuclear14/Weapons/Guns/Pistols/N14WeaponPistol12mm/shot1.ogg
       useKey: false
       selectedMode: FullAuto
@@ -574,11 +575,11 @@
   description: Nothing more than a raider in fancy clothes, wielding a 9mm SMG.
   components:
     - type: Gun
-      minAngle: 10
+      minAngle: 12
       maxAngle: 26
       angleIncrease: 4
       angleDecay: 16
-      fireRate: 3.0
+      fireRate: 3.25
       soundGunshot:
         collection: N14Pistol9mmGunshot
       useKey: false
@@ -591,7 +592,7 @@
       capacity: 31
       count: 31
     - type: RechargeBasicEntityAmmo
-      rechargeCooldown: 4
+      rechargeCooldown: 3
       rechargeSound:
         path: /Audio/_Nuclear14/Weapons/Effects/Reload/SMGs/smg_magin.ogg
     - type: Loadout
@@ -656,11 +657,11 @@
   description: A raider wearing pre-war law enforcement uniform. One might want to keep distance because he has a riot shotgun!
   components:
     - type: Gun
-      minAngle: 35
+      minAngle: 40
       maxAngle: 160
       angleIncrease: 8
       angleDecay: 16
-      fireRate: 1.5
+      fireRate: 1.75
       soundGunshot: /Audio/_Nuclear14/Weapons/Guns/Shotguns/N14WeaponRiotShotgun/shot1.ogg
       useKey: false
       selectedMode: SemiAuto
@@ -672,7 +673,7 @@
       capacity: 12
       count: 12
     - type: RechargeBasicEntityAmmo
-      rechargeCooldown: 4
+      rechargeCooldown: 3
       rechargeSound:
         path: /Audio/_Nuclear14/Weapons/Effects/Reload/Shotguns/shotgun_insert.ogg
     - type: Loadout
@@ -741,7 +742,7 @@
       maxAngle: 15
       angleIncrease: 2
       angleDecay: 4
-      fireRate: 1.25
+      fireRate: 1.5
       soundGunshot:
         collection: N14RevolverMagnunGunshot
       useKey: false
@@ -754,7 +755,7 @@
       capacity: 6
       count: 6
     - type: RechargeBasicEntityAmmo
-      rechargeCooldown: 4
+      rechargeCooldown: 3
       rechargeSound:
         path: /Audio/_Nuclear14/Weapons/Effects/Reload/Pistols/pistol_magin.ogg
     - type: Loadout

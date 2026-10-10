@@ -315,12 +315,12 @@
     - English
   - type: IdleSound #Misfits Change
   - type: SpamEmitSound #Misfits Change
-    minInterval: 20
-    maxInterval: 60
+    minInterval: 1
+    maxInterval: 10
     sound:
       collection: MisfitsRaiderIdle
       params:
-        volume: -6
+        volume: 2
         maxDistance: 8
   - type: AggroSound #Misfits Change - separate aggro/alert vocalization on combat entry
     sound:
