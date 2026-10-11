@@ -326,7 +326,7 @@
     sound:
       collection: MisfitsRaiderAlert
       params:
-        volume: -3
+        volume: 2
         maxDistance: 10
   - type: Fixtures
     fixtures:

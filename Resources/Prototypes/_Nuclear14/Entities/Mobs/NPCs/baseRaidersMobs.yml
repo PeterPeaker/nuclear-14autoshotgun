@@ -49,8 +49,25 @@
           true
         NavClimb: !type:Bool
           true
+        VisionRadius: !type:Single
+          4.0
         MeleeRange: !type:Single
           1.5
+    - type: IdleSound #Misfits Change
+    - type: SpamEmitSound #Misfits Change
+      minInterval: 15
+      maxInterval: 60
+      sound:
+        collection: MisfitsRaiderIdle
+        params:
+          volume: -6
+          maxDistance: 8
+    - type: AggroSound #Misfits Change - separate aggro/alert vocalization on combat entry
+      sound:
+        collection: MisfitsRaiderAlert
+        params:
+          volume: -3
+          maxDistance: 10
     - type: MeleeWeapon
       hidden: true
       attackRate: 1.5
