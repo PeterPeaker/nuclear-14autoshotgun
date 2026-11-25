@@ -23,6 +23,7 @@
   requireAdminNotify: true
   joinNotifyCrew: true
   canBeAntag: false
+  overwatchCategory: OverwatchCommand
   overrideConsoleVisibility: false
   accessGroups:
   - VaultOverseer # Full vault access
@@ -33,13 +34,17 @@
         factions:
           - Wastelander
           - Vault
+      # #Misfits Add - command voice: bigger chat text
+      - type: SpeechFontOverride
+        fontSizeBonus: 4
 
 - type: startingGear
   id: VaultManagementGear
   equipment:
     wallet: N14Wallet
     jumpsuit: N14ClothingUniformJumpsuitVault14
-    back: N14ClothingBackpackVaultBlue
+    back: M14VaultSecuritySatchel
+    outerClothing: N14ClothingOuterOverseerCoat
     shoes: N14ClothingBootsBlack
     eyes: ClothingEyesGlassesSunglasses
     id: N14VaultOverseerPDA
@@ -49,6 +54,7 @@
   storage:
     back:
     - N14Bandage
+    - EncryptionKeySecurity
     - N14CurrencyPrewarMoney500
     - N14CurrencyPrewarMoney500
 

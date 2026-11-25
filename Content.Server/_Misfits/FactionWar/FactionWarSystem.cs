@@ -96,6 +96,7 @@ public sealed class FactionWarSystem : EntitySystem
         "Vault",
         "Enclave",
         "Eighties",
+        "Rangers", // #Misfits Add - NCR Rangers are their own war faction, separate from the NCR Army.
     };
 
     /// <summary>Jobs that should never be auto-enlisted even if their faction is at war.</summary>
@@ -104,6 +105,7 @@ public sealed class FactionWarSystem : EntitySystem
         "NCRPrisoner",
         "CaesarLegionSlave",
         "CaesarLegionFrumentarii",
+        "CaesarLegionSpeculatore",
         "CaesarLegionCitizen",
         "CaesarLegionTrader",
         "NCRCitizen",
@@ -2359,6 +2361,7 @@ public sealed class FactionWarSystem : EntitySystem
             "Vault" => "Vault",
             "Enclave" => "Enclave",
             "Eighties" => "Eighties",
+            "Rangers" => "NCR Rangers", // #Misfits Add
             _ => canonicalFaction,
         };
     }

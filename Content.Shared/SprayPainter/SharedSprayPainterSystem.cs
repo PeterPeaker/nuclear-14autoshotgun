@@ -33,8 +33,7 @@ public abstract class SharedSprayPainterSystem : EntitySystem
     public List<AirlockStyle> Styles { get; private set; } = new();
     public List<AirlockGroupPrototype> Groups { get; private set; } = new();
 
-    [ValidatePrototypeId<AirlockDepartmentsPrototype>]
-    private const string Departments = "Departments";
+    private static readonly ProtoId<AirlockDepartmentsPrototype> Departments = "Departments";
 
     public override void Initialize()
     {
@@ -49,6 +48,7 @@ public abstract class SharedSprayPainterSystem : EntitySystem
         {
             subs.Event<SprayPainterSpritePickedMessage>(OnSpritePicked);
             subs.Event<SprayPainterColorPickedMessage>(OnColorPicked);
+            subs.Event<SprayPainterSetCustomColorMessage>(OnSetCustomColor);
             subs.Event<SprayPainterSetDecalMessage>(OnSetDecal);
             subs.Event<SprayPainterSetDecalColorMessage>(OnSetDecalColor);
             subs.Event<SprayPainterSetDecalAngleMessage>(OnSetDecalAngle);
@@ -139,6 +139,15 @@ public abstract class SharedSprayPainterSystem : EntitySystem
         SetColor(ent, args.Key);
     }
 
+    private void OnSetCustomColor(Entity<SprayPainterComponent> ent, ref SprayPainterSetCustomColorMessage args)
+    {
+        ent.Comp.PickedCustomColor = args.Color;
+        if (args.Color != null)
+            ent.Comp.PickedColor = null;
+
+        Dirty(ent, ent.Comp);
+    }
+
     private void OnSpritePicked(Entity<SprayPainterComponent> ent, ref SprayPainterSpritePickedMessage args)
     {
         if (args.Index >= Styles.Count)
@@ -199,6 +208,7 @@ public abstract class SharedSprayPainterSystem : EntitySystem
             return;
 
         ent.Comp.PickedColor = paletteKey;
+        ent.Comp.PickedCustomColor = null;
         Dirty(ent, ent.Comp);
     }
 
