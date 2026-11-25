@@ -57,3 +57,15 @@
     - type: Tag
       tags:
       - Torch
+    - type: LightBehaviour
+      behaviours:
+        - !type:FadeBehaviour # have the radius start small and get larger as it starts to burn
+          id: turn_on
+          maxDuration: 10.0
+          startValue: 2.0
+          endValue: 8.0
+        - !type:FadeBehaviour # fade out radius as it burns out
+          id: fade_out
+          maxDuration: 10.0
+          startValue: 10.0
+          endValue: 1.0
