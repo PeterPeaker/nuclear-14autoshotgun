@@ -4,12 +4,12 @@
   id: Torch
   description: A torch fashioned from some wood.
   components: #Wassuy changes, reverted torch back to its OG states, why do you want inf burning torch for 2 woods?!
-    - type: ItemToggleHot #Wassuy add, allow torch to burn things.
+    - type: ItemToggleHot #Wassuy add, allow torch to burn things, soak em in fuel and burn in hell!.
     - type: ExpendableLight
       refuelMaterialID: WoodPlank
-      glowDuration: 1200  #last about 20 minutes
-      refuelMaterialTime: 50
-      refuelMaximumDuration: 205
+      glowDuration: 2400  #last about 40 minutes
+      refuelMaterialTime: 60
+      refuelMaximumDuration: 240
       fadeOutDuration: 4
       iconStateSpent: torch_spent
       iconStateLit: torch_nocloth

@@ -47,8 +47,8 @@
     layers:
     - state: potato
   - type: Battery
-    maxCharge: 70
-    startingCharge: 70
+    maxCharge: 140
+    startingCharge: 140
   - type: Tag
     tags:
       - PotatoBattery
@@ -71,8 +71,8 @@
       state: o2
       shader: unshaded
   - type: Battery
-    maxCharge: 360
-    startingCharge: 360
+    maxCharge: 720
+    startingCharge: 720
   - type: MachinePart
     part: PowerCell
     rating: 1
@@ -94,7 +94,7 @@
         shader: unshaded
         visible: false
   - type: Battery
-    maxCharge: 360
+    maxCharge: 720
     startingCharge: 0
 
 - type: entity
@@ -112,8 +112,8 @@
       state: o2
       shader: unshaded
   - type: Battery
-    maxCharge: 720
-    startingCharge: 720
+    maxCharge: 1440
+    startingCharge: 1440
   - type: MachinePart
     part: PowerCell
     rating: 2
@@ -132,7 +132,7 @@
         shader: unshaded
         visible: false
   - type: Battery
-    maxCharge: 720
+    maxCharge: 1440
     startingCharge: 0
 
 - type: entity
@@ -150,8 +150,8 @@
       state: o2
       shader: unshaded
   - type: Battery
-    maxCharge: 1080
-    startingCharge: 1080
+    maxCharge: 2160
+    startingCharge: 2160
   - type: MachinePart
     part: PowerCell
     rating: 3
@@ -170,7 +170,7 @@
         shader: unshaded
         visible: false
   - type: Battery
-    maxCharge: 1080
+    maxCharge: 2160
     startingCharge: 0
 
 - type: entity
@@ -188,8 +188,8 @@
       state: o2
       shader: unshaded
   - type: Battery
-    maxCharge: 1800
-    startingCharge: 1800
+    maxCharge: 3600
+    startingCharge: 3600
   - type: MachinePart
     part: PowerCell
     rating: 4
@@ -208,7 +208,7 @@
         shader: unshaded
         visible: false
   - type: Battery
-    maxCharge: 1800
+    maxCharge: 3600
     startingCharge: 0
 
 - type: entity
@@ -262,8 +262,8 @@
         state: o2
         shader: unshaded
     - type: Battery
-      maxCharge: 1200
-      startingCharge: 1200
+      maxCharge: 1080
+      startingCharge: 1080
     - type: BatterySelfRecharger
       autoRecharge: true
       autoRechargeRate: 40
